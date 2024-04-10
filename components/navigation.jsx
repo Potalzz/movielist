@@ -10,10 +10,16 @@ export default function Nav() {
       <nav className={styles.nav}>
         <ul>
           <li>
-            <Link href="/">Home</Link> {path === "/" ? "⭐" : ""}
+            <Link prefetch href="/">
+              Home
+            </Link>{" "}
+            {path === "/" ? "⭐" : ""}
           </li>
           <li>
-            <Link href="/about">about</Link> {path === "/about" ? "⭐" : ""}
+            <Link prefetch href="/about">
+              about
+            </Link>{" "}
+            {path === "/about" ? "⭐" : ""}
           </li>
         </ul>
       </nav>
